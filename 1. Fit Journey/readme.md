@@ -1,7 +1,7 @@
 # Fit Journey Workout Tracker
 
 This repository contains the code for the Fit Journey workout tracker application, which helps users map and track their workouts. How it works? - Just click on the map and register your workout, URL is here: https://fitjourney.netlify.app/
-![alt Appearance](/misc/Screenshot_1.png)
+![alt Appearance](https://github.com/Kochurovskyi/Full-Stack/blob/main/1.%20Fit%20Journey/misc/Screenshot_1.png)
 
 ## Features
 
@@ -72,7 +72,7 @@ The application uses the Leaflet library to display a map and markers for the wo
 
 #### Activity diagram
 
-![alt diagram](/misc/Activity_diagr.png)
+![alt diagram](https://github.com/Kochurovskyi/Full-Stack/blob/main/1.%20Fit%20Journey/misc/Activity_diagr.png)
 
 The App class contains the main logic of the application. It has properties for the map, the zoom level of the map, the map event, and an array of workouts. It also has methods to get the user's position, load the map, show and hide the form for adding a new workout, toggle the elevation field, add a new workout, render the workout marker and workout on the map, move to the popup for a workout, and set and get the workouts from local storage.
 
@@ -92,7 +92,7 @@ The script.js file you provided is a great example of Object-Oriented Programmin
 
 - **App**: This class represents the application itself. It has properties to store the map, the zoom level, the map event, and an array of workouts. It also has a number of methods to handle different aspects of the application, such as getting the user's position, loading the map, showing and hiding the form, creating a new workout, rendering workouts on the map and in a list, moving to a popup, and storing and retrieving data from local storage. The App class is instantiated at the end of the script to start the application.
 
-![alt class diagram](/misc/class_diagr.png)
+![alt class diagram](https://github.com/Kochurovskyi/Full-Stack/blob/main/1.%20Fit%20Journey/misc/class_diagr.png)
 
 #### Here's a breakdown of the OOP concepts used:
 
