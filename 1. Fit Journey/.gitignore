@@ -1,0 +1,7 @@
+node_modules
+dist
+.parcel-cache
+.DS_Store
+Mapty-architecture-final.png
+Mapty-architecture-part-1.png
+Mapty-flowchart.png
