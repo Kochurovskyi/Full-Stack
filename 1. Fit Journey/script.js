@@ -81,7 +81,6 @@ class App {
   constructor() {
     // Get user's position
     this._getPosition();
-
     // Get data from local storage
     this._getLocalStorage();
 
@@ -96,12 +95,23 @@ class App {
       navigator.geolocation.getCurrentPosition(
         this._loadMap.bind(this),
         function () {
-          alert('Could not get your position');
-        }
+          alert(
+            'Could not get your position. Let`s start from Mersin (Turkiye)'
+          );
+          // Default coordinates for Mersin, Turkey
+          const defaultCoordinates = {
+            coords: {
+              latitude: 36.7337711,
+              longitude: 34.5302374,
+            },
+          };
+          this._loadMap(defaultCoordinates);
+        }.bind(this)
       );
   }
 
   _loadMap(position) {
+    // console.log(position);
     const { latitude } = position.coords;
     const { longitude } = position.coords;
     // console.log(`https://www.google.pt/maps/@${latitude},${longitude}`);
@@ -125,6 +135,32 @@ class App {
       this._renderWorkoutMarker(work);
     });
   }
+
+  // _loadMersin(position) {
+  //   const { latitude } = 36.7337711;
+  //   const { longitude } = 34.5302374;
+  //   console.log(latitude, longitude);
+  //   // console.log(`https://www.google.pt/maps/@${latitude},${longitude}`);
+
+  //   const coords = [latitude, longitude];
+
+  //   this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
+
+  //   L.tileLayer(
+  //     'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+  //     {
+  //       attribution:
+  //         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  //     }
+  //   ).addTo(this.#map);
+
+  //   // Handling clicks on map
+  //   this.#map.on('click', this._showForm.bind(this));
+
+  //   this.#workouts.forEach(work => {
+  //     this._renderWorkoutMarker(work);
+  //   });
+  // }
 
   _showForm(mapE) {
     this.#mapEvent = mapE;
