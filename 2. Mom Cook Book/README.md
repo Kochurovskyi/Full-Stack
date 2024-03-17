@@ -156,14 +156,8 @@ Parcel supports many different file types out of the box, including JavaScript, 
 ## 9. Installation
 
 To get a local copy up and running follow these simple steps:
-
-#### Install dependencies
-
-`npm install`
-
-#### Start the server
-
-`npm start`
+**Install dependencies** `npm install`
+**Start the server** `npm start`
 
 ## 10. The room for improvement
 While the project is well-structured and implements a lot of functionality, there are always areas that can be improved or expanded upon. Here are a few suggestions:
