@@ -1,6 +1,6 @@
-# The Mom's Cook Book Project
+# The Mom's Cook Book
 
-Mom's Cook Book is a web application that allows you to search over 1,000,000 recipes.
+Mom's Cook Book is a web application that allows you to search over 1,000,000 (and more) recipes from your past.
 
 ## 1. Features
 
@@ -59,10 +59,10 @@ This pattern allows for a clear separation of concerns in the application. The c
 
 ## 4. App Usage
 
-To use the application, simply type your desired recipe type (pizza, soup ...) into the search bar and press enter. The application will fetch the recipes list from the query and display it on the page. 
-Then you can click on the recipe to see the details. You can also adjust the number of servings and add the recipe to your bookmarks.
+To use the application, simply type this desired recipe type (pizza, soup ...) into the search bar and press enter. The application will fetch the recipes list from the query and display it on the page. 
+Then you can click on the recipe to see the details. You can also adjust the number of servings and add the recipe to this bookmarks.
 
-If you like it, you can add this recipe to your bookmarks by clicking on the heart icon. You can also add your own recipe by clicking on the "Bookmark" button.
+If you like it, you can add this recipe to this bookmarks by clicking on the heart icon. You can also add this own recipe by clicking on the "Bookmark" button.
 From the bookmarks, you can retrieve the recipe by clicking on the recipe name.
 
 If you want to add a new recipe, click on the "Add Recipe" button and fill in the form. The Recipe will be added to the database.
@@ -135,14 +135,49 @@ Here's a brief overview of how asynchronous fetching is used in the code:
 
 By using asynchronous fetching, the application can retrieve data from the API without blocking the JavaScript runtime, allowing for a smoother user experience.
 
-## 8 Installation
+## 8. Parcel
+
+In this project, Parcel was used to serve the application during development. When you run `npm start`, it starts the Parcel development server. This server compiles this code and serves it at a local URL, usually `http://localhost:1234`. It also watches this files for changes and automatically recompiles this code and refreshes the page when you save a file.
+
+Parcel is a web application bundler that I was using in this project. It's a tool that takes this code, along with all its dependencies, and bundles it into a single file that can be served to the browser. It's similar to other tools like Webpack or Rollup, but it's designed to work out of the box with zero configuration.
+
+Here's the command that's being run when app to be executed `npm start`:
+
+```bash
+parcel index.html
+```
+of just `npm start` which is a shorthand for the above command.
+
+This command tells Parcel to start bundling this application starting from the `index.html` file. Parcel analyzes this file, finds all the linked JavaScript and CSS files, and starts bundling them together. It also starts a development server and serves the bundled files.
+
+Parcel supports many different file types out of the box, including JavaScript, CSS, HTML, and more. It also has built-in support for transformations with Babel, PostCSS, and PostHTML. And it automatically optimizes this assets for production when you build this application for deployment.
+
+
+## 9. Installation
 
 To get a local copy up and running follow these simple steps:
 
-## Install dependencies
+#### Install dependencies
 
 `npm install`
 
-## Start the server
+#### Start the server
 
 `npm start`
+
+## 10. The room for improvement
+While the project is well-structured and implements a lot of functionality, there are always areas that can be improved or expanded upon. Here are a few suggestions:
+
+1. **Error Handling**: While the code does have some error handling in place, it could be improved. For example, the application could provide more user-friendly error messages when a network request fails or when an invalid input is entered.
+
+2. **Testing**: The project could benefit from a more comprehensive suite of automated tests. This could include unit tests for individual functions, integration tests for larger pieces of functionality, and end-to-end tests that simulate user interactions.
+
+3. **Performance Optimization**: There may be opportunities to optimize the performance of the application. This could involve things like lazy-loading images, minifying and compressing JavaScript and CSS files, and using a service worker to cache assets for offline use.
+
+4. **Accessibility**: It's important to ensure that web applications are accessible to all users, including those with disabilities. The application could be improved by adding ARIA attributes, ensuring sufficient color contrast, and providing keyboard navigation.
+
+5. **User Interface**: While the user interface is clean and modern, there's always room for improvement. This could involve tweaking the color scheme, improving the layout on smaller screens, or adding animations and transitions for a more polished look and feel.
+
+6. **Additional Features**: Depending on the needs of the users, there could be several features to add. For example, a rating system for recipes, comments section, or the ability to share recipes on social media.
+
+Remember, it's important to prioritize these improvements based on the needs of the users and the goals of the project.
