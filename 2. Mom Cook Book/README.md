@@ -58,7 +58,7 @@ In the provided code, the Pub-Sub pattern is used to handle user interactions an
 
 This pattern allows for a clear separation of concerns in the application. The controller only needs to know how to dispatch events, the model only needs to know how to update the state, and the views only need to know how to render themselves based on the state. This makes the code easier to understand, test, and maintain.
 
-This class represents the application itself. It has properties to store the map, the zoom level, the map event, and an array of workouts. It also has a number of methods to handle different aspects of the application, such as getting the user's position, loading the map, showing and hiding the form, creating a new workout, rendering workouts on the map and in a list, moving to a popup, and storing and retrieving data from local storage. The App class is instantiated at the end of the script to start the application.
+This class represents the application itself. It has properties to store the map, the zoom level, the map event, and an array of workouts. It also has a number of methods to handle different aspects of the application, such as getting the user's position, loading the map, showing and hiding the form, creating a new workout, rendering workouts on the map and in a list, moving to a popup, and storing and retrieving data from local storage. All MVC architecture is reflected in the calss and sequence diagrams:
 
 ![alt class diagram](https://github.com/Kochurovskyi/Full-Stack/blob/main/2.%20Mom%20Cook%20Book/misc/class_diagr.png)
 
