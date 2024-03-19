@@ -60,7 +60,11 @@ This pattern allows for a clear separation of concerns in the application. The c
 
 This class represents the application itself. It has properties to store the map, the zoom level, the map event, and an array of workouts. It also has a number of methods to handle different aspects of the application, such as getting the user's position, loading the map, showing and hiding the form, creating a new workout, rendering workouts on the map and in a list, moving to a popup, and storing and retrieving data from local storage. All MVC architecture is reflected in the calss and sequence diagrams:
 
+**Class Diagram**
 ![alt class diagram](https://github.com/Kochurovskyi/Full-Stack/blob/main/2.%20Mom%20Cook%20Book/misc/class_diagr.png)
+
+**Sequence Diagram**
+![alt class diagram](https://github.com/Kochurovskyi/Full-Stack/blob/main/2.%20Mom%20Cook%20Book/misc/sequence_diagr.png)
 
 ## 4. App Usage
 
