@@ -7,3 +7,5 @@ dist
 .prettierrc
 .idea
 .gitconfig
+.gitignore
+js (course).zip
