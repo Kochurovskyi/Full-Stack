@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Launch it here: https://superreactquiz.netlify.app/ and don't forget to have fun
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
